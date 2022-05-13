@@ -23,9 +23,32 @@ Tested:  5/10/22 Passed
 <head>
     <link rel="stylesheet" href="style.css">
                <meta charset="utf-8">
+               <meta name="viewport" content="width=device-width, initial-scale=1.0">
                <title>About me</title>
                <link rel="stylesheet" href="style.css">
                <link href="nav.css" rel="stylesheet">
+               <style>
+                .name{
+                    grid-column-start: 1;
+                    grid-column-end: 3;
+                    grid-row: 2;
+                    text-align: center;
+                }
+                .image{
+                    grid-column-start: 1;
+                    grid-column-end: 3;
+                    grid-row: 3;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                .about{
+                    grid-column-start: 1;
+                    grid-column-end: 3;
+                    grid-row: 4;
+                    text-align: center;
+                }
+            
+            </style>
 </head>
 <body>
     <nav> <ul>
@@ -41,21 +64,34 @@ Tested:  5/10/22 Passed
             <li><a href="#contact.html">Contact</a></li>
         </ul></nav>
     <header><h1>PC Builders Guide</h1></header>
-    <h2>Heath Hukari</h2>
-<h3>About Me!</h3>
-<main>
-    <a href ="Heath_Hukari_Resume v5.pdf">resume</a>
-<p>
-    Hello and welcome!
-    <br>
-    <br> My name is Heath Hukari, I was born in St. Louis, Missouri, but I grew up in St. Petersburg, Florida. I am seeking a degree in Economics at the University of Missouri. For as long as I can remember, I have had a deep passion for technology, I used to take apart old computers and electronics to try to understand how they worked and try to see if I could fix or improve them, and most of the time I would fail at this especially when I was younger, but I learned from it each time.
-</p>
-<blockquote>
-    <em>“Ever tried. Ever failed. No matter. Try again. Fail again. Fail better.”</em> <strong>Samuel Beckett</strong>
-</blockquote>
-    <p>As I started to grow older, I began to learn about how they worked, and I was able to start upgrading and fixing my own tech devices. I love technology and how it's used in our day-to-day lives to connect us all together and improve our lives, from being able to communicate with someone a thousand miles away or being able to perform life-saving surgeries that would be otherwise impossible for humans alone. 
-</p>
+<main class="wrapper">
+    
+    <div class="name">
+        <h1>Heath Hukari</h1>
+    </br>
+        <blockquote>
+            <em>“Ever tried. Ever failed. No matter. Try again. Fail again. Fail better.”</em> <strong>Samuel Beckett</strong>
+        </blockquote>
+    </div>
+    <div class="image">
+        <img src= "Headshot.jpg" width="217.5" height="326.33" alt="Professional Photo">
+    </div>
+   
+    <div class="about">
+        <h3>About Me</h3>
+            <p>My name is Heath Hukari, I was born in St. Louis, Missouri, but I grew up in St. Petersburg, Florida. I am seeking a degree in Economics at the University of Missouri. 
+                For as long as I can remember, I have had a deep passion for technology, I used to take apart old computers and electronics to try to understand how they worked and try to see if
+                 I could fix or improve them, and most of the time I would fail at this especially when I was younger, but I learned from it each time.As I started to grow older, I began to learn about how they worked, 
+                 and I was able to start upgrading and fixing my own tech devices. I love technology and how it's used in our day-to-day lives to connect us all together and improve our lives, from being able to 
+                 communicate with someone a thousand miles away or being able to perform life-saving surgeries that would be otherwise impossible for humans alone. 
+                </p>
+            </br>
+            <a href ="Heath_Hukari_Resume v5.pdf">Resume</a>
+</div>
 </main>
-<footer>©2022 Heath Hukari, Hrh7v3@umsystem.edu</footer>
+    <footer>©2022 Heath Hukari, Hrh7v3@umsystem.edu</footer>
+
 </body>
+
+
 </html>
