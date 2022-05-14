@@ -1,4 +1,16 @@
-h1, h2  {color: #cc1b24;}
+@font-face { 
+
+    font-family: PTSans; /*this is where we give our font a name so we can use it!*/
+    
+    src: url("PTSans-Regular.ttf"); /*remember this is how we link to files in CSS!*/
+    
+    }
+    
+    body {
+        background-color: #c9bbb1;
+        color: #00006e;
+    }
+h1, h2  {color: #1b94cc;}
 main p:first-child::first-letter {font-weight: bold;}
 p {text-indent: 2em;}
 .center {
@@ -13,4 +25,20 @@ p {text-indent: 2em;}
     grid-gap:1em;
     grid-auto-rows:minmax(100px, auto);
     width:100%;
+}
+@media (max-width: 1000px){
+    nav{
+      padding: 0 40px 0 50px;
+    }
+}
+@media Print {
+    *{ 
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+
+
 }
