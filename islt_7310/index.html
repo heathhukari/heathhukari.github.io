@@ -27,7 +27,24 @@ Tested:  5/12/22 Passed
     <link rel="stylesheet" href="style.css">
     <link href="nav.css" rel="stylesheet">
     <link rel="shortcut icon" href="apple-touch-icon.png">
-    <style>
+    <style type="text/css">
+        .thumbnail{width: 25px;
+                   height: 25px;
+        }
+        .thumbnailbig{
+            position: absolute;
+            width: 0px;
+            -webkit-transition:width 0.3s linear 0s;
+            transition: width 0.3s linear 0s; 
+            z-index: 10;
+        }
+        
+            .thumbnail:hover + .thumbnailbig{
+                width: 50px;
+            }
+           
+        
+        
      .name{
          grid-column-start: 1;
          grid-column-end: 3;
@@ -79,8 +96,12 @@ Tested:  5/12/22 Passed
                and in-depth detail about what the difference in the hardware you chose can do. </div>
     </main>
     <footer class="footer">
-        <p>Heath Hukari<img class="thumbnail" src="Mail.png" width="25" height="25"  alt="email">
-             (hrh7v3@umsystem.edu) <img class="thumbnail2" src="phone.png" width="25" height="25" alt="phone">
+        <p>Heath Hukari
+            <img class="thumbnail" src="Mail.png" alt="email">
+            <img class="thumbnailbig" src="Mail.png" alt="email">
+             (hrh7v3@umsystem.edu) 
+             <img class="thumbnail" src="phone.png" alt="phone">
+             <img class="thumbnailbig" src="phone.png" alt="phone">
               111-555-0100 &copy;Copyright 2022</p>
         </footer>
 </body>
